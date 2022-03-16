@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000"/>
+
+    <meta
+        name="description"
+        content="coffee, creado para desmotración de aprendizaje.">
+    <meta name="keywords" content="coffee, js, html, css">
+    <meta name="author" content="Flores Torres Martin Alexander">
+
+    <!--===== css =====-->
+    <link rel="stylesheet" href="styles.css">
+
+    <!--===== box icon =====-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <link rel="apple-touch-icon" href="img/favicon.png">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="preload" href="img/home.png" as="image">
+    <link rel="preload" href="img/loadcoffee.gif" as="image">
+    <title>Coffee</title>
+</head>
+
+    <!--===== LOADER =====-->
+    <div class="load" id="load">
+        <img class="load__gif" src="img/loadcoffee.gif" alt="imagen">
+    </div>
+    <!--===== HEADER =====-->
+    <header class="header" id="header">
+        <nav class="nav max-width">
+            <a href="#inicio" class="nav__logo">
+                <i class="bx bx-coffee-togo"></i>
+                Coffee.
+            </a>
+
+            <div class="nav__menu" id="nav-navegacion">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#inicio" class="nav__link">Inicio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#productos" class="nav__link">Productos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#premium" class="nav__link">Premium</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#blog" class="nav__link">Blog</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="bx bx-x"></i>
+                </div>
+            </div>
+
+            <!--===== toggle boton =====-->
+            <div class="nav__toggle" id="nav-menu">
+                <i class="bx bx-menu"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!--===== INICIO =====-->
+    <section class="inicio" id="inicio">
+        <div class="inicio__contenedor">
+            <div class="inicio__presentacion">
+                <div class="inicio__top">
+                    <h1 class="inicio__titulo">Tu café favorito Conocelos<span class="inicio__colorNaranja">.</span></h1>
+                    <p class="inicio__parrafo">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="inicio__bottom">
+                    <div class="inicio__testimonios">
+                        <h2 class="inicio__colorNaranja inicio__colorNaranja--tamaño">120k</h2>
+                        <h4 class="inicio__testimoniosTitle">Testimonios</h4>
+                        <p class="inicio__testimoniosParrafo">
+                            Lorem ipsum dolor, sit amet consectetur 
+                            adipisicing elit. Laborum, nemo.
+                        </p>
+                    </div>
+                    <div class="inicio__testimonios">
+                        <h2 class="inicio__colorNaranja inicio__colorNaranja--tamaño">350+</h2>
+                        <h4 class="inicio__testimoniosTitle">Producto Exclusivo</h4>
+                        <p class="inicio__testimoniosParrafo">
+                            Lorem ipsum dolor, sit amet consectetur 
+                            adipisicing elit. Laborum, nemo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <a href="#especiales" class="inicio__scroll"><img class="inicio__scrollImg" src="img/scroll.png" alt="imagen de café">  </a>
+            <div class="inicio__bg"></div>
+        </div>
+    </section>
+
+    <!--===== MAIN =====-->
+    <main class="max-width">
+        <!--===== ESPECIALES =====-->
+        <section class="especiales" id="especiales">
+            <div class="especiales__top">
+                <h2 class="title">Cafés especiales que te hacen feliz y te animan¡</h2>
+                <a class="boton boton--width" href="#premium">ver más</a>
+            </div>
+            <div class="especiales__bottom">
+                <div class="especiales__item">
+                    <img class="especiales__img" src="img/specialty1.png" alt="imagen de Coffee">
+                    <h4 class="especiales__title">café seleccionado</h4>
+                    <p class="especiales__texto">seleccionamos el mejor café premium para un verdadero sabor</p>
+                </div>
+                <div class="especiales__item">
+                    <img class="especiales__img" src="img/specialty2.png" alt="imagen de Coffee">
+                    <h4 class="especiales__title">deliciosas galletas</h4>
+                    <p class="especiales__texto">disfruta tu cafe con unas galletitas calientes</p>
+                </div>
+                <div class="especiales__item">
+                    <img class="especiales__img" src="img/specialty3.png" alt="imagen de Coffee">
+                    <h4 class="especiales__title">disfruta en casa</h4>
+                    <p class="especiales__texto">disfruta del mejor café en la comodidad de tu hogar</p>
+                </div>
+            </div>
+        </section>
+
+        <!--===== PRODUCTOS =====-->
+        <section class="productos" id="productos">
+            <h2 class="title">Elige nuestros deliciosos y mejores productos</h2>
+            <div class="productos__filtros">
+                <div class="filtro__top">
+                    <h2 class="filtro__h2">Filtro</h2>
+                    <i class='bx bx-chevron-down productos__ico'></i>
+                </div>
+                <div class="productos__filtro">
+                    <h1 class="productos__title activo">Todos</h1>
+                    <p>11 productos</p>
+                </div>
+                <div class="productos__filtro">
+                    <h1 class="productos__title">nuevos manjares</h1>
+                    <p>3 productos</p>
+                </div>
+                <div class="productos__filtro">
+                    <h2 class="productos__title">café caliente</h2>
+                    <p>4 productos</p>
+                </div>
+                <div class="productos__filtro">
+                    <h2 class="productos__title">pastel y delicias</h2>
+                    <p>4 productos</p>
+                </div>
+            </div>
+
+            <section class="grid" id="grid">
+                <div class="item" data-categoria="nuevos manjares">
+                    <div class="item-contenido">
+                        <img class="productos__img" src="img/delicacies1.png">
+                        <div class="productos__info">
+                            <h2 class="productos__costo">S/.5</h2>
+                            <h3 class="productos__nombre">galletas</h3>
+                            <div class="grid__boton">
+                                <i class='bx bx-shopping-bag'></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" data-categoria="nuevos manjares">
+                    <div class="item-contenido">
+                        <img class="productos__img" src="img/delicacies2.png">
+                        <div class="productos__info">
+                            <h2 class="productos__costo">S/.5</h2>
+                            <h3 class="productos__nombre">Cachitos</h3>
+                            <div class="grid__boton">
+                                <i class='bx bx-shopping-bag'></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" data-categoria="nuevos manjares">
+                    <div class="item-contenido">
+                        <img class="productos__img" src="img/delicacies2.png">
+                        <div class="productos__info">
+                            <h2 class="productos__costo">S/.5</h2>
+                            <h3 class="productos__nombre">Roscas</h3>
+                            <div class="grid__boton">
+                                <i class='bx bx-shopping-bag'></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--===== cafes =====-->
+                <div class="item" data-categoria="café caliente">
+                    <div class="item-contenido">
+                        <img class="productos__img" src="img/coffee1.png">
+                        <div class="productos__info">
+                            <h2 class="productos__costo">S/.7</h2>
+                            <h3 class="productos__nombre">Café</h3>
+                            <div class="grid__boton">
+                                <i class='bx bx-shopping-bag'></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" data-categoria="café caliente">
+                    <div class="item-contenido">
+                        <img class="productos__img" src="img/coffee2.png">
+                        <div class="productos__info">
+                            <h2 class="productos__costo">S/.3</h2>
+                            <h3 class="productos__nombre">Café</h3>
+                            <div class="grid__boton">
+                                <i class='bx bx-shopping-bag'></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" data-categoria="café caliente">
+                    <div class="item-contenido">
+                        <img class="productos__img" src="img/coffee3.png">
+                        <div class="productos__info">
+                            <h2 class="productos__costo">S/.4</h2>
+                            <h3 class="productos__nombre">Café</h3>
+                            <div class="grid__boton">
+                                <i class='bx bx-shopping-bag'></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" data-categoria="café caliente">
+                    <div class="item-contenido">
+                        <img class="productos__img" src="img/coffee4.png">
+                        <div class="productos__info">
+                            <h2 class="productos__costo">S/.9</h2>
+                            <h3 class="productos__nombre">Café</h3>
+                            <div class="grid__boton">
+                                <i class='bx bx-shopping-bag'></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--===== pastel y delicias =====-->
+                <div class="item" data-categoria="pastel y delicias">
+                    <div class="item-contenido">
+                        <img class="productos__img" src="img/cake1.png">
+                        <div class="productos__info">
+                            <h2 class="productos__costo">S/.7</h2>
+                            <h3 class="productos__nombre">Pastel</h3>
+                            <div class="grid__boton">
+                                <i class='bx bx-shopping-bag'></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" data-categoria="pastel y delicias">
+                    <div class="item-contenido">
+                        <img class="productos__img" src="img/cake2.png">
+                        <div class="productos__info">
+                            <h2 class="productos__costo">S/.5</h2>
+                            <h3 class="productos__nombre">Delicias</h3>
+                            <div class="grid__boton">
+                                <i class='bx bx-shopping-bag'></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" data-categoria="pastel y delicias">
+                    <div class="item-contenido">
+                        <img class="productos__img" src="img/cake3.png">
+                        <div class="productos__info">
+                            <h2 class="productos__costo">S/.6</h2>
+                            <h3 class="productos__nombre">Pastel</h3>
+                            <div class="grid__boton">
+                                <i class='bx bx-shopping-bag'></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" data-categoria="pastel y delicias">
+                    <div class="item-contenido">
+                        <img class="productos__img" src="img/cake4.png">
+                        <div class="productos__info">
+                            <h2 class="productos__costo">S/.8</h2>
+                            <h3 class="productos__nombre">Pastel</h3>
+                            <div class="grid__boton">
+                                <i class='bx bx-shopping-bag'></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!--===== PREMIUM =====-->
+        <section class="premium" id="premium">
+            <h2 class="title">ofrecemos una preparación premium y de mejor calidad solo para ti¡</h2>
+            <div class="premium__contenedor">
+                <div class="premium__imagen">
+                    <img class="premium__img" src="img/home.png" alt="imagen dea cafe">
+                    <img class="premium__position" src="img/quality2.png" alt="imagen de cafe">
+                </div>
+                <div class="premium__informacion">
+                    <h2 class="premium__title">café de primera calidad</h2>
+                    <div>
+                        <h2 class="premium__precio">S/.95.99</h2>
+                        <span class="premium__especial">precio especial</span>
+                    </div>
+                    <p class="premium__parrafo">
+                        Estamos encantados con nuestro café. por eso te 
+                        llevas el mejor café premium más la tetera de 
+                        materiales resistentes que ves en la imagen,
+                        por un precio especial
+                    </p>
+                    <div class="premium__botones">
+                        <a class="boton boton--ancho" href="#">comprar ahora</a>
+                        <a class="boton boton--blanco" href="#blog">ver más <i class='bx bx-right-arrow-alt' ></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--===== ICONOS =====-->
+        <section class="iconos">
+            <div class="iconos__item">
+                <img class="iconos__img" src="img/logocoffee1.png" alt="logo de cafe">
+            </div>
+
+            <div class="iconos__item">
+                <img class="iconos__img" src="img/logocoffee2.png" alt="logo de cafe">
+            </div>
+
+            <div class="iconos__item">
+                <img class="iconos__img" src="img/logocoffee3.png" alt="logo de cafe">
+            </div>
+
+            <div class="iconos__item">
+                <img class="iconos__img" src="img/logocoffee4.png" alt="logo de cafe">
+            </div>
+
+            <div class="iconos__item">
+                <img class="iconos__img" src="img/logocoffee5.png" alt="logo de cafe">
+            </div>
+        </section>
+
+        <!--===== BLOGS =====-->
+        <section class="blogs" id="blog">
+            <h2 class="title">nuestros blogs cafe con RealCaffee esta lista para esta semana</h2>
+            <div class="blogs__contenedor">
+                <div class="blogs__item">
+                    <div class="blogs__imagen">
+                        <img class="blogs__img" src="img/blog1.png" alt="imagen de blog de cafe">
+                        <a class="blogs__boton" href="#"><i class='bx bx-right-arrow-alt blogs__i'></i></a>
+                    </div>
+                    <h2 class="blogs__title">10 recomendaciones de café</h2>
+                    <p>
+                        los blogs sobre cafe te ayudaran mucho sobre como 
+                        se prepara su tiempo de espera, para un cafe de buena calidad
+                    </p>
+                    <div class="blogs__iconos">
+                        <div class="blogs__comentarios">
+                            <i class='bx bx-comment'></i> 12
+                        </div>
+                        <div class="blogs__vistas">
+                            <i class='bx bxl-youtube' ></i> 67.2k
+                        </div>
+                    </div>
+                </div>
+                <div class="blogs__item">
+                    <div class="blogs__imagen">
+                        <img class="blogs__img" src="img/blog2.png" alt="imagen de blog de cafe">
+                        <a class="blogs__boton" href="#"><i class='bx bx-right-arrow-alt blogs__i'></i></a>
+                    </div>
+                    <h2 class="blogs__title">10 recomendaciones de café</h2>
+                    <p>
+                        los blogs sobre cafe te ayudaran mucho sobre como 
+                        se prepara su tiempo de espera, para un cafe de buena calidad
+                    </p>
+                    <div class="blogs__iconos">
+                        <div class="blogs__comentarios">
+                            <i class='bx bx-comment'></i> 12
+                        </div>
+                        <div class="blogs__vistas">
+                            <i class='bx bxl-youtube' ></i> 67.2k
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--===== subir =====-->
+
+    <a href="#inicio" class="subir" id="subir"><i class='bx bx-up-arrow-alt'></i></a>
+
+    <footer class="footer">
+        <div class="max-width">
+            <h2 class="footer__title">Coffee</h2>
+
+            <div class="footer__contenedor">
+                <ul class="footer__item">
+                    <li class="footer__li">
+                        <p>Suscribete a nuestros talleres</p>
+                        <form class="footer__formulario">
+                            <input class="footer__input" type="email" placeholder="Email" required>
+                            <button class="footer__boton"><i class='bx bx-right-arrow-alt blogs__i'></i></buttom>
+                        </form>
+                    </li>
+                </ul>
+                <ul class="footer__item">
+                    <h2 class="footer__title">Contacto</h2>
+                    <li class="footer__li"><a class="footer__link" href="tel:120-30213">120-30213</a></li>
+                    <li class="footer__li">
+                        <a class="footer__link" href="#">info@gmail.com</a>
+                    </li>
+                </ul>
+                <ul class="footer__item">
+                    <h2 class="footer__title">Cursos</h2>
+                    <li class="footer__li"><a class="footer__link" href="#">Coffee</a></li>
+                    <li class="footer__li">
+                        <a class="footer__link" href="#">Programacion</a>
+                    </li>
+                </ul>
+                <ul class="footer__item">
+                    <h2 class="footer__title">Ubicanos</h2>
+                    <li class="footer__li"><a class="footer__link" href="#">Peru</a></li>
+                    <li class="footer__li">
+                        <a class="footer__link" href="#">Piura-123</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__redes">
+                <div class="footer__ico">
+                    <a class="footer__enlace" href="#"><i class='bx bxl-facebook'></i></a>
+                    <a class="footer__enlace" href="#"><i class='bx bxl-instagram'></i></a>
+                    <a class="footer__enlace" href="#"><i class='bx bxl-youtube'></i></a>
+                    <a class="footer__enlace" href="#"><i class='bx bxl-github'></i></a>
+                </div>
+                <p>© Copyright. Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <!--===== js =====-->
+    <script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
+	<script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
