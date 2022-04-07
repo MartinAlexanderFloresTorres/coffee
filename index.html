@@ -33,10 +33,12 @@
     <!--===== HEADER =====-->
     <header class="header" id="header">
         <nav class="nav max-width">
-            <a href="#inicio" class="nav__logo">
-                <i class="bx bx-coffee-togo"></i>
-                Coffee.
-            </a>
+            <div class="nav__flex">
+                <a href="#inicio" class="nav__logo">
+                    <i class="bx bx-coffee-togo"></i>
+                    Coffee.
+                </a>
+            </div>
 
             <div class="nav__menu" id="nav-navegacion">
                 <ul class="nav__list">
@@ -53,18 +55,39 @@
                         <a href="#blog" class="nav__link">Blog</a>
                     </li>
                 </ul>
-
                 <div class="nav__close" id="nav-close">
                     <i class="bx bx-x"></i>
                 </div>
             </div>
 
+            <div class="boton--cart">
+                <span class="indiceContador">0</span>
+                <i class='bx bx-cart boton--cart--icono'></i>
+            </div>
             <!--===== toggle boton =====-->
             <div class="nav__toggle" id="nav-menu">
                 <i class="bx bx-menu"></i>
             </div>
         </nav>
     </header>
+
+     <!--===== producto exitosamente notificacion =====-->
+     <div class="agregadoExitosamente">PRODUCTO AGREGADO <span class="indicePor">!!</span></div>
+     
+    <!--===== CARRITO =====-->
+    <div class="carrito">
+        <div class="carrito__top">
+            <h2 class="carrito__title">carrito de compras <i class='bx bx-x carrito__close'></i></h2>
+        </div>
+
+        <div class="carrito__contenedor">
+            
+        </div>
+        <div class="carrito__botones">
+            <p class="carrito__total">Total: S/.<span class="total">2030</span></p>
+            <button class="carrito__boton">Procesar Compra</button>
+        </div>
+    </div>
 
     <!--===== INICIO =====-->
     <section class="inicio" id="inicio">
@@ -151,14 +174,15 @@
                 </div>
             </div>
 
+    
             <section class="grid" id="grid">
                 <div class="item" data-categoria="nuevos manjares">
                     <div class="item-contenido">
                         <img class="productos__img" src="img/delicacies1.png">
                         <div class="productos__info">
-                            <h2 class="productos__costo">S/.5</h2>
+                            <h2 class="productos__costo">S/.<span class="productos__precio">8</span></h2>
                             <h3 class="productos__nombre">galletas</h3>
-                            <div class="grid__boton">
+                            <div class="grid__boton" data-id="1">
                                 <i class='bx bx-shopping-bag'></i>
                             </div>
                         </div>
@@ -168,9 +192,9 @@
                     <div class="item-contenido">
                         <img class="productos__img" src="img/delicacies2.png">
                         <div class="productos__info">
-                            <h2 class="productos__costo">S/.5</h2>
+                            <h2 class="productos__costo">S/.<span class="productos__precio">6</span></h2>
                             <h3 class="productos__nombre">Cachitos</h3>
-                            <div class="grid__boton">
+                            <div class="grid__boton" data-id="2">
                                 <i class='bx bx-shopping-bag'></i>
                             </div>
                         </div>
@@ -180,9 +204,9 @@
                     <div class="item-contenido">
                         <img class="productos__img" src="img/delicacies2.png">
                         <div class="productos__info">
-                            <h2 class="productos__costo">S/.5</h2>
+                            <h2 class="productos__costo">S/.<span class="productos__precio">7</span></h2>
                             <h3 class="productos__nombre">Roscas</h3>
-                            <div class="grid__boton">
+                            <div class="grid__boton" data-id="3">
                                 <i class='bx bx-shopping-bag'></i>
                             </div>
                         </div>
@@ -193,9 +217,9 @@
                     <div class="item-contenido">
                         <img class="productos__img" src="img/coffee1.png">
                         <div class="productos__info">
-                            <h2 class="productos__costo">S/.7</h2>
+                            <h2 class="productos__costo">S/.<span class="productos__precio">2</span></h2>
                             <h3 class="productos__nombre">Café</h3>
-                            <div class="grid__boton">
+                            <div class="grid__boton" data-id="4">
                                 <i class='bx bx-shopping-bag'></i>
                             </div>
                         </div>
@@ -205,9 +229,9 @@
                     <div class="item-contenido">
                         <img class="productos__img" src="img/coffee2.png">
                         <div class="productos__info">
-                            <h2 class="productos__costo">S/.3</h2>
-                            <h3 class="productos__nombre">Café</h3>
-                            <div class="grid__boton">
+                            <h2 class="productos__costo">S/.<span class="productos__precio">7</span></h2>
+                            <h3 class="productos__nombre">Café de leche</h3>
+                            <div class="grid__boton" data-id="5">
                                 <i class='bx bx-shopping-bag'></i>
                             </div>
                         </div>
@@ -217,9 +241,9 @@
                     <div class="item-contenido">
                         <img class="productos__img" src="img/coffee3.png">
                         <div class="productos__info">
-                            <h2 class="productos__costo">S/.4</h2>
-                            <h3 class="productos__nombre">Café</h3>
-                            <div class="grid__boton">
+                            <h2 class="productos__costo">S/.<span class="productos__precio">4</span></h2>
+                            <h3 class="productos__nombre">Café de soya</h3>
+                            <div class="grid__boton" data-id="6">
                                 <i class='bx bx-shopping-bag'></i>
                             </div>
                         </div>
@@ -229,9 +253,9 @@
                     <div class="item-contenido">
                         <img class="productos__img" src="img/coffee4.png">
                         <div class="productos__info">
-                            <h2 class="productos__costo">S/.9</h2>
-                            <h3 class="productos__nombre">Café</h3>
-                            <div class="grid__boton">
+                            <h2 class="productos__costo">S/.<span class="productos__precio">3</span></h2>
+                            <h3 class="productos__nombre">Café de chocolate</h3>
+                            <div class="grid__boton" data-id="7">
                                 <i class='bx bx-shopping-bag'></i>
                             </div>
                         </div>
@@ -242,9 +266,9 @@
                     <div class="item-contenido">
                         <img class="productos__img" src="img/cake1.png">
                         <div class="productos__info">
-                            <h2 class="productos__costo">S/.7</h2>
+                            <h2 class="productos__costo">S/.<span class="productos__precio">5</span></h2>
                             <h3 class="productos__nombre">Pastel</h3>
-                            <div class="grid__boton">
+                            <div class="grid__boton" data-id="8">
                                 <i class='bx bx-shopping-bag'></i>
                             </div>
                         </div>
@@ -254,9 +278,9 @@
                     <div class="item-contenido">
                         <img class="productos__img" src="img/cake2.png">
                         <div class="productos__info">
-                            <h2 class="productos__costo">S/.5</h2>
+                            <h2 class="productos__costo">S/.<span class="productos__precio">11</span></h2>
                             <h3 class="productos__nombre">Delicias</h3>
-                            <div class="grid__boton">
+                            <div class="grid__boton" data-id="9">
                                 <i class='bx bx-shopping-bag'></i>
                             </div>
                         </div>
@@ -266,9 +290,9 @@
                     <div class="item-contenido">
                         <img class="productos__img" src="img/cake3.png">
                         <div class="productos__info">
-                            <h2 class="productos__costo">S/.6</h2>
-                            <h3 class="productos__nombre">Pastel</h3>
-                            <div class="grid__boton">
+                            <h2 class="productos__costo">S/.<span class="productos__precio">12</span></h2>
+                            <h3 class="productos__nombre">Pastelitos</h3>
+                            <div class="grid__boton" data-id="10">
                                 <i class='bx bx-shopping-bag'></i>
                             </div>
                         </div>
@@ -278,9 +302,9 @@
                     <div class="item-contenido">
                         <img class="productos__img" src="img/cake4.png">
                         <div class="productos__info">
-                            <h2 class="productos__costo">S/.8</h2>
-                            <h3 class="productos__nombre">Pastel</h3>
-                            <div class="grid__boton">
+                            <h2 class="productos__costo">S/.<span class="productos__precio">10</span></h2>
+                            <h3 class="productos__nombre">Paste de manzana</h3>
+                            <div class="grid__boton" data-id="11">
                                 <i class='bx bx-shopping-bag'></i>
                             </div>
                         </div>
@@ -443,5 +467,6 @@
     <script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
 	<script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
     <script src="main.js"></script>
+    <script src="carrito.js"></script>
 </body>
 </html>

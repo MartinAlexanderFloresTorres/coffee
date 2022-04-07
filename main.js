@@ -5,16 +5,19 @@ const btnMenu = document.querySelector("#nav-menu"),
     navegacionLinks = document.querySelectorAll(".nav__link"),
     filtros = document.querySelector(".productos__filtros"),
     productos_ico = document.querySelector(".productos__ico"),
-    productos_title = document.querySelectorAll(".productos__title");
+    productos_title = document.querySelectorAll(".productos__title"),
+    body = document.querySelector("body");
 
 if (btnMenu) {
     btnMenu.addEventListener("click", () => {
         navegacion.classList.add("active");
+        body.classList.add("active");
     });
 }
 if (btnclose) {
     btnclose.addEventListener("click", () => {
         navegacion.classList.remove("active");
+        body.classList.remove("active");
     });
 }
 if (productos_ico) {
@@ -33,6 +36,7 @@ if (productos_ico) {
 }
 function clickLink() {
     navegacion.classList.remove("active");
+    body.classList.remove("active");
 }
 navegacionLinks.forEach((link) =>
     link.addEventListener("click", () => clickLink())
@@ -40,21 +44,17 @@ navegacionLinks.forEach((link) =>
 
 /*===== scroll header ===== */
 const header = document.querySelector(".header"),
-    logo = document.querySelector(".nav__logo"),
-    subir = document.querySelector("#subir");
+    subir = document.querySelector("#subir"),
+    botonCart = document.querySelector(".boton--cart");
 
 window.addEventListener("scroll", () => {
     const valorScroll = window.scrollY;
     if (valorScroll > 50) {
-        header.style.background = "var(--body-color)";
-        header.style.boxShadow = "var(--box-shadow)";
-        logo.style.color = "var(--black-color)";
-        header.classList.add("color");
+        header.style.background = "var(--black)";
+        header.style.boxShadow = "var(--box-shadow--negro)";
     } else {
         header.style.background = "transparent";
         header.style.boxShadow = "none";
-        logo.style.color = "var(--white)";
-        header.classList.remove("color");
     }
     /*===== scroll up ===== */
     if (valorScroll > 200) {
@@ -71,9 +71,9 @@ const grid = new Muuri(".grid", {
     },
 });
 
-const load = document.querySelector('#load');
+const load = document.querySelector("#load");
 window.addEventListener("load", () => {
-    load.style.display = 'none';
+    load.style.display = "none";
     grid.refreshItems().layout();
     // Agregamos los listener de los titulos para filtrar por categoria.
     const titulos = document.querySelectorAll(".productos__title");
