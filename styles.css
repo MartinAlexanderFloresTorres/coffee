@@ -240,10 +240,10 @@ img {
 }
 .carrito__total {
     color: var(--black);
-    font-weight: bold;
+    font-weight: 400;
 }
 .total {
-    font-weight: 300;
+    font-weight: 500;
 }
 .carrito__boton {
     color: var(--white);
@@ -542,6 +542,14 @@ img {
     font-size: var(--font-size-14);
 }
 /*===== productos ===== */
+.cantidad{
+    top: 10px;
+    right: 10px;
+    color: var(--black);
+    position: absolute;
+    font-weight: 500;
+    font-size: 16px;
+}
 .productos {
     width: 100%;
     padding-top: 100px;

@@ -20,6 +20,7 @@ const carritoContenedor = document.querySelector(".carrito__contenedor");
 const btnPagar = document.querySelector(".carrito__boton");
 const indiceContador = document.querySelector(".indiceContador");
 const agregadoExitosamente = document.querySelector(".agregadoExitosamente");
+const grid__boton = document.querySelector(".grid__boton");
 
 let guardarCarrito = [];
 
@@ -49,6 +50,21 @@ cargarListener();
 function RecoletaImformacion(e) {
     if (e.target.classList.contains("grid__boton")) {
         const div = e.target.parentElement.parentElement;
+
+        const getCarrito = JSON.parse(
+            localStorage.getItem("carrito__75") || []
+        );
+        const dataId = parseInt(e.target.getAttribute("data-id"));
+        const datos = getCarrito.find((producto) => {
+            return producto.id === dataId;
+        });
+        if (datos === undefined) {
+            div.querySelector(".cantidad-numero").textContent = 1;
+        } else {
+            div.querySelector(".cantidad-numero").textContent =
+                datos.cantidad + 1;
+        }
+
         if (!agregadoExitosamente.classList.contains("active")) {
             agregadoExitosamente.classList.add("active");
             setTimeout(() => {
